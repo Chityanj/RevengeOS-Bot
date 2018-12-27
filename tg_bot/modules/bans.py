@@ -259,7 +259,7 @@ def unban(bot: Bot, update: Update, args: List[str]) -> str:
         return ""
 
     if is_user_in_chat(chat, user_id):
-        message.reply_text("Why are you trying to unban someone that's already in the chat?")
+        message.reply_text("Isn't this person already here")
         return ""
 
     chat.unban_member(user_id)
